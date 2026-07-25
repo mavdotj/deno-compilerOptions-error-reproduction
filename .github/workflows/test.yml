@@ -10,7 +10,6 @@ jobs:
       matrix:
         workspace: ["tsconfig.json", "deno.json"]
         package: ["tsconfig.json", "deno.json"]
-    continue-on-error: true
     name: ${{ matrix.workspace }} + ${{ matrix.package }}
     steps:
       - uses: actions/checkout@v6
