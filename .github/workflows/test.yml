@@ -6,9 +6,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
-        workspace: ['tsconfig', 'denojsonconfig']
-        package: ['tsconfig', 'denojsonconfig']
+        workspace: ["tsconfig", "denojsonconfig"]
+        package: ["tsconfig", "denojsonconfig"]
     steps:
       - uses: actions/checkout@v6
       - uses: denoland/setup-deno@v2
