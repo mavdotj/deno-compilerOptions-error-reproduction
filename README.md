@@ -28,3 +28,5 @@ And the difference is if it's defined in a `deno.json` or a `tsconfig.json` file
 | tsconfig.json | deno.jsonc    | ❌, `lib` is not applied      |
 | deno.jsonc    | tsconfig.json | ❌, `rootDirs` is not applied |
 | deno.jsonc    | deno.jsonc    | ✅                            |
+
+<img width="274" height="130" alt="image" src="https://github.com/user-attachments/assets/1a5d9295-970f-42f9-b25c-51c6feac182a" />
