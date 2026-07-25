@@ -1,4 +1,4 @@
-# Deno does not merge compilerOptions between `deno.json(c)` and `tsconfig.json` in a workspace
+# Deno fails to merge workspace `compilerOptions` when the workspace and member do not use the same config type
 
 This repo is a reproduction of an issue in Deno 2.9.4 where workspace and member `compilerOptions` are only merged when both configuration files are the same type. If they are not the same type, deno only uses the `compilerOptions` in the `deno.json(c)` file and ignores the `tsconfig.json`
 
