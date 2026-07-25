@@ -8,13 +8,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        workspace: ["tsconfig", "denojsonconfig"]
-        package: ["tsconfig", "denojsonconfig"]
+        workspace: ["tsconfig.json", "deno.json"]
+        package: ["tsconfig.json", "deno.json"]
     continue-on-error: true
+    name: ${{ matrix.workspace }} + ${{ matrix.package }}
     steps:
       - uses: actions/checkout@v6
       - uses: denoland/setup-deno@v2
         with:
-          deno-version: v2.9.4
+          deno-version: v2.*
+      - run: deno -v
       - working-directory: ${{ matrix.workspace }}/packages/${{ matrix.package }}
         run: deno check
