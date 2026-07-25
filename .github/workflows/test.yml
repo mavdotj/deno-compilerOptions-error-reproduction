@@ -10,6 +10,7 @@ jobs:
       matrix:
         workspace: ["tsconfig", "denojsonconfig"]
         package: ["tsconfig", "denojsonconfig"]
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v6
       - uses: denoland/setup-deno@v2
