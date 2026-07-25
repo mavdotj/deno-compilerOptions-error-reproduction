@@ -1,0 +1,10 @@
+{
+    "workspace": {
+        "members": ["packages/*"]
+    },
+    "compilerOptions": {
+        "lib": [
+            "dom"
+        ]
+    }
+}

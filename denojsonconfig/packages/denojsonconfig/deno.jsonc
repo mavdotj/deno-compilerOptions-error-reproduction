@@ -1,0 +1,7 @@
+{
+    "name": "denojsonconfig",
+    "exports": "./mod.ts",
+    "compilerOptions": {
+        "rootDirs": [".", "../../../types"]
+    }
+}

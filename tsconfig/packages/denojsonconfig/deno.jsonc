@@ -1,0 +1,6 @@
+{
+  "name": "denojsonconfig",
+  "compilerOptions": {
+    "rootDirs": [".", "../../../types"]
+  }
+}
